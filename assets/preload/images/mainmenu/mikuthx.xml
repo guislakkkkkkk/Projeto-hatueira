@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="mikuthx.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="mikuend0000" x="2" y="2" width="538" height="766" frameX="-153" frameY="0" frameWidth="692" frameHeight="766"/>
+	<SubTexture name="mikuend0001" x="2" y="2" width="538" height="766" frameX="-153" frameY="0" frameWidth="692" frameHeight="766"/>
+	<SubTexture name="mikuend0002" x="556" y="2" width="626" height="765" frameX="-66" frameY="-1" frameWidth="692" frameHeight="766"/>
+	<SubTexture name="mikuend0003" x="556" y="2" width="626" height="765" frameX="-66" frameY="-1" frameWidth="692" frameHeight="766"/>
+	<SubTexture name="mikuend0004" x="1198" y="2" width="691" height="765" frameX="-1" frameY="-1" frameWidth="692" frameHeight="766"/>
+	<SubTexture name="mikuend0005" x="1198" y="2" width="691" height="765" frameX="-1" frameY="-1" frameWidth="692" frameHeight="766"/>
+	<SubTexture name="mikuend0006" x="1905" y="2" width="691" height="766" frameX="0" frameY="0" frameWidth="692" frameHeight="766"/>
+	<SubTexture name="mikuend0007" x="1905" y="2" width="691" height="766" frameX="0" frameY="0" frameWidth="692" frameHeight="766"/>
+	<SubTexture name="mikuend0008" x="2612" y="2" width="673" height="765" frameX="-19" frameY="-1" frameWidth="692" frameHeight="766"/>
+	<SubTexture name="mikuend0009" x="2612" y="2" width="673" height="765" frameX="-19" frameY="-1" frameWidth="692" frameHeight="766"/>
+</TextureAtlas>
