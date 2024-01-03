@@ -75,7 +75,16 @@ class MainMenuState extends MusicBeatState
 		persistentUpdate = persistentDraw = true;
 
 		var yScroll:Float = Math.max(0.25 - (0.05 * (optionShit.length - 4)), 0.1);
-		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuBG'));
+		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('images/mainmenu/bars'));
+		bg.scrollFactor.set(0, yScroll);
+		bg.setGraphicSize(Std.int(bg.width * 1.175));
+		bg.updateHitbox();
+		bg.screenCenter();
+		bg.antialiasing = ClientPrefs.globalAntialiasing;
+		add(bg);
+
+		var yScroll:Float = Math.max(0.25 - (0.05 * (optionShit.length - 4)), 0.1);
+		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('images/mainmenu/bars'));
 		bg.scrollFactor.set(0, yScroll);
 		bg.setGraphicSize(Std.int(bg.width * 1.175));
 		bg.updateHitbox();
@@ -240,19 +249,19 @@ class MainMenuState extends MusicBeatState
 
 								switch (daChoice)
 								{
-									case 'story_mode':
+									case 'buttons':
 										MusicBeatState.switchState(new StoryMenuState());
-									case 'freeplay':
+									case 'buttons':
 										MusicBeatState.switchState(new FreeplayState());
 									#if desktop
-									case 'mods':
+									case 'buttons':
 										MusicBeatState.switchState(new ModsMenuState());
 									#end
-									case 'awards':
+									case 'buttons':
 										MusicBeatState.switchState(new AchievementsMenuState());
-									case 'credits':
+									case 'buttons':
 										MusicBeatState.switchState(new CreditsState());
-									case 'options':
+									case 'buttons':
 										LoadingState.loadAndSwitchState(new options.OptionsState());
 								}
 							});
